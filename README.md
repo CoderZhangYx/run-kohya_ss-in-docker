@@ -32,7 +32,7 @@ RUN sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirrors.aliyun.com\
 # Install the required packages
 RUN apt-get update
 RUN apt-get install -y ffmpeg libsm6 libxext6 git ninja-build libglib2.0-0 libsm6 libxrender-dev libxext6 
-RUN apt-get install -y vim tmux wget
+RUN apt-get install -y vim tmux wget htop
 
 # (Optional)install support for chinese language 
 # RUN apt-get install -y language-pack-zh-hans
