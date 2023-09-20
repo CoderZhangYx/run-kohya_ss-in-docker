@@ -38,7 +38,7 @@ RUN apt-get install -y vim tmux wget htop
 # RUN apt-get install -y language-pack-zh-hans
 # RUN locale-gen zh_CN.UTF-8 && echo "export LC_ALL=zh_CN.UTF-8">> /etc/profile && /bin/bash -c "source /etc/profile"
 
-RUN wget -c https://repo.anaconda.com/miniconda/Miniconda3-py310_23.1.0-1-Linux-x86_64.sh -O miniconda.sh
+RUN wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py310_23.1.0-1-Linux-x86_64.sh -O miniconda.sh
 RUN bash miniconda.sh -b
 RUN rm miniconda.sh
 RUN /root/miniconda3/bin/conda init
